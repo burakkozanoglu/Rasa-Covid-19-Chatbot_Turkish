@@ -1,0 +1,139 @@
+intents:
+  - greet
+  - vedalasma
+  - onaylama
+  - reddetme
+  - harika_mod
+  - uzgun_mod
+  - bot_tecrubesi
+  - ne_yapabilirsin
+  - korona_gunluk
+  - korona_belirtileri
+  - korona_korunma
+  - nefes_darligi
+  - ates
+  - oksuruk
+  - temas
+  - diyabet
+  - hiper_tansiyon
+  - akciger_rahatsizligi
+  - kalp_hastaligi
+  - korona_test
+  - korona_turkey
+
+responses:
+  utter_greet:
+  - text: "Merhaba, nasilsin? Nasil yardimci olabilirim?: "
+    buttons:
+      - title: "Koronavirüs belirtileri nelerdir?"
+        payload: "/korona_belirtileri"
+      - title: "Koronavirüsten korunmak icin ne yapabilirim"
+        payload: "/korona_korunma"
+      - title: "Türkiye'de toplam vaka, iyileşen ve ölüm sayısı nedir?"
+        payload: "/korona_turkey"
+
+    utter_korona_gunluk:
+  - text: "Burada koronavirus hakkında gunluk bilgileri bulabilecegin bir sayfa [var](https://covid19.saglik.gov.tr/)"
+
+  utter_bu_yardimci_oldu_mu:
+  - text: "Bu sana yardimci oldu mu?"
+
+  utter_mutlu:
+  - text: "Harika, buna sevindim!"
+
+  utter_vedalasma:
+  - text: "Hoscakal, yine beklerim"
+
+  utter_bot_tecrubesi:
+  - text: "Ben bir konusma robotuyum. Gelistirme asamasindayim, lütfen yanlislarim olursa beni affet ve gelistirilmeme yardimci ol"
+
+  utter_korona_belirtileri:
+  - text: "En yaygın semptomlar:
+           ateş
+           kuru öksürük
+           yorgunluk
+           Daha seyrek görülen semptomlar:
+           ağrı ve sızı
+           boğaz ağrısı
+           ishal
+           konjunktivit
+           baş ağrısı
+           tat alma veya koku duyusunun kaybı
+           ciltte döküntü ya da el veya ayak parmaklarında renk değişimi
+           Ciddi semptomlar:
+           solunum güçlüğü veya nefes darlığı
+           göğüs ağrısı veya göğüste baskı
+           konuşma veya hareket kaybı
+           Ciddi semptomlar gösteriyorsanız derhal tıbbi yardım alın. Doktorunuzu veya sağlık tesisini ziyaret etmeden önce mutlaka telefonla arayın.
+           Hafif semptomlar gösteren ve başka bir sağlık sorunu olmayan kişiler, tedavi sürecini evde geçirmelidir.
+           Virüsle enfekte olan kişiler ortalama 5-6 gün içinde semptomları göstermeye başlar. Bununla birlikte, bu süre 14 günü bulabilir."
+
+  utter_ne_yapabilirsin:
+  - text: "Bana covid-19 ile ilgili merak ettiklerini sorabilirsin; örnegin, Koronavirus belirtileri nelerdir?, Gunluk korona tablosunu ogrenmek istiyorum, Koronavirus hastaligindan korunmak icin neler yapabilirim, gibi sorularına cevap vermek icin egitildim"
+
+  utter_eglendirici:
+  - text: "Burada seni mutlu edecek bir sey var: https://ibb.co/qx74cxG"
+
+  utter_korona_korunma:
+  - text: "Mümkün olduğu kadar yurtdışına yolculuk yapılmaması önerilmektedir. Yurtdışına çıkışın zorunlu olduğu durumlarda aşağıdaki kurallara dikkat edilmelidir.Akut solunum yolu enfeksiyonlarının genel bulaşma riskini azaltmak için önerilen temel ilkeler Yeni Koronavirüs Hastalığı (COVID-19) için de geçerlidir. Bunlar; El temizliğine dikkat edilmelidir. Eller en az 20 saniye boyunca sabun ve suyla yıkanmalı, sabun ve suyun olmadığı durumlarda alkol bazlı el antiseptiği kullanılmalıdır. Antiseptik veya antibakteriyel içeren sabun kullanmaya gerek yoktur, normal sabun yeterlidir. Eller yıkanmadan ağız, burun ve gözlerle temas edilmemelidir. Hasta insanlarla temastan kaçınmalıdır (mümkün ise en az 1 m uzakta bulunulmalı). Özellikle hasta insanlarla veya çevreleriyle doğrudan temas ettikten sonra eller sık sık temizlenmelidir. Hastaların yoğun olarak bulunması nedeniyle mümkün ise sağlık merkezlerine gidilmemeli, sağlık kuruluşuna gidilmesi gereken durumlarda diğer hastalarla temas en aza indirilmelidir. Öksürme veya hapşırma sırasında burun ve ağız tek kullanımlık kağıt mendil ile örtülmeli, kağıt mendilin bulunmadığı durumlarda ise dirsek içi kullanılmalı, mümkünse kalabalık yerlere girilmemeli, eğer girmek zorunda kalınıyorsa ağız ve burun kapatılmalı, tıbbi maske kullanılmalıdır. Çiğ veya az pişmiş hayvan ürünleri yemekten kaçınılmalıdır. İyi pişmiş yiyecekler tercih edilmelidir. Çiftlikler, canlı hayvan pazarları ve hayvanların kesilebileceği alanlar gibi genel enfeksiyonlar açısından yüksek riskli alanlardan kaçınılmalıdır. Seyahat sonrası 14 gün içinde herhangi bir solunum yolu semptomu olursa maske takılarak en yakın sağlık kuruluşuna başvurulmalı, doktora seyahat öyküsü hakkında bilgi verilmelidir."
+
+  utter_semptoms:
+  - text: " Aşağıdaki semptomlardan siz de olanı işaretler misiniz?:"
+    buttons:
+    - payload: /oksuruk
+      title: Öksürük ve ateşim var
+    - payload: /nefes_darligi
+      title: Nefes darlığı hissediyorum
+    - payload: /reddetme
+      title: Yukarıdakilerden hiçbiri
+
+  utter_herhangi_biri:
+  - text: " Aşağıdaki semptomlardan siz de olanı işaretler misiniz?:"
+    buttons:
+    - payload: /diyabet
+      title: Diyabetim var
+    - payload: /akciger_rahatsizligi
+      title: Akciğer rahatsızlığım var
+    - payload: /reddetme
+      title: Yukarıdakilerden hiçbiri
+
+  utter_herhangi_biri_2:
+  - text: " Aşağıdaki semptomlardan siz de olanı işaretler misiniz?:"
+    buttons:
+    - payload: /temas
+      title: Koronavirüs hastalığı olan biriyle 14 gün içinde temas ettim
+    - payload: /saglikcalisani
+      title: Sağlık çalışanıyım
+    - payload: /reddetme
+      title: Yukarıdakilerden hiçbiri
+
+  utter_dusuk_risk:
+  - text: "Enfeksiyon riskiniz düşük seviyede. Zorunlu kalmadıkça dışarı çıkmamanızı ve virüsten olabildiğince kaçınmanızı öneriyorum. Yukarıdaki semptomlarla karşılaşırsanız lütfen en yakın sağlık kuruluşuna başvurun veya alo 184 hattını arayın."
+
+  utter_korona_turkey:
+  - text: "Türkiye'deki toplam korona tablosu: Vaka:{vaka}\nİyileşen:{iyilesen}\nÖlü:{olu}\nEvde kalın, hayat eve sığar"
+
+  utter_korona_test:
+    - text: "Hemen başlıyoruz"
+
+actions:
+  - utter_greet
+  - utter_korona_gunluk
+  - utter_bu_yardimci_oldu_mu
+  - utter_mutlu
+  - utter_vedalasma
+  - utter_bot_tecrubesi
+  - utter_korona_korunma
+  - utter_ne_yapabilirsin
+  - utter_korona_belirtileri
+  - utter_semptoms
+  - utter_herhangi_biri
+  - utter_herhangi_biri_2
+  - utter_dusuk_risk
+  - action_korona_turkey
+  - utter_korona_test
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
